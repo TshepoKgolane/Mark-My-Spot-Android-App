@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Navigation" android:background="@color/Orange">
+
+    <TextView
+        android:id="@+id/Titlelb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"
+        android:text="Navigate to a place"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/lblLat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Titlelb"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Enter address"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/txtSpot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblLat"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30a6a6a6"
+        android:drawableLeft="@drawable/land_marks"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:hint="eg 23 mart avenue"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtSpot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/black"
+        android:padding="10sp"
+        android:text="Navigate"
+        android:textColor="@color/DarkOrange"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnNav"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/transparent"
+        android:padding="10sp"
+        android:text="Go back"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

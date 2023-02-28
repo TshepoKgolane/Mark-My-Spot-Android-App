@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/markmyspotlogin">
+
+    <TextView
+        android:id="@+id/txtLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Register account"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLogIn"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30a6a6a6"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:hint="Name"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30a6a6a6"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:hint="Last name"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/Rusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/surname"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30a6a6a6"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:hint="Email"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/Rpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rusername"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="#15808080"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Rpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/black"
+        android:padding="10sp"
+        android:text="Register"
+        android:textColor="@color/DarkOrange"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/NoAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRegister"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="20dp"
+        android:text="Go back"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings"
+    android:background="@color/Orange">
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Settings"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblPref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTitle"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Preffered land Mark"
+        android:textSize="20sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dropdown"
+        android:layout_centerHorizontal="true"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblPref"
+        android:gravity="center_horizontal"
+        android:hint="--Select Type"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <AutoCompleteTextView
+            android:id="@+id/dropDownItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/DarkOrange"
+            android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/metric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dropdown"
+        android:text="Unit of measurement"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/metric"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Metric system(kilometers)"
+
+            android:textSize="20dp"/>
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/lay1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Imperial system(Miles)"
+
+            android:textSize="20dp"/>
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lay2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/black"
+        android:padding="10sp"
+        android:text="Save"
+        android:textColor="@color/DarkOrange"
+        android:textSize="14sp" />
+</RelativeLayout>

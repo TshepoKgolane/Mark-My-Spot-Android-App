@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "232870331587",
+    "project_id": "mark-my-spot-678bc",
+    "storage_bucket": "mark-my-spot-678bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232870331587:android:2c0242991a7d710fb6ce76",
+        "android_client_info": {
+          "package_name": "com.example.markmyspot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232870331587-8e3g63o5n8qpjbv4vv72dhdhv304posu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIgVSGLTWoKH_f2XxjVNNxxX7mQVcy3fM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232870331587-8e3g63o5n8qpjbv4vv72dhdhv304posu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
